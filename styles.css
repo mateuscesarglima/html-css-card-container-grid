@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+p,
+li {
+  font-size: 15px;
+}
+
+a {
+  color: rgb(136, 136, 136);
+}
+
+a:hover {
+  color: orange;
+  font-weight: bold;
+}
+.card-container {
+  width: 825px;
+  margin: 0 auto;
+  margin-top: 200px;
+  border: 5px solid black;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
+}
+
+.card-container header {
+  text-align: center;
+  background-color: #ddd;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 10px;
+  text-transform: uppercase;
+  grid-column: 1 / -1;
+}
+/* COLORS */
+.colors {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.color {
+  width: 20px;
+  height: 20px;
+}
+
+.color-black {
+  background-color: black;
+}
+
+.color-blue {
+  background-color: #2f6ee2;
+}
+.color-red {
+  background-color: #ec2f2f;
+}
+
+.color-yellow {
+  background-color: #f0bf1e;
+}
+
+.color-green {
+  background-color: #90cc20;
+}
+
+.color-brown {
+  background-color: #885214;
+}
+
+/* BUTTON */
+.add-cart-button {
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  grid-column: 1 / -1;
+}
+
+.add-cart-button:hover {
+  background-color: white;
+  color: black;
+  border-top: 5px solid black;
+}
+
+.shipping-container {
+  flex: 1;
+  margin-top: 20px;
+}
+
+.shipping-primary-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.free-shipping-text {
+  font-size: 14px;
+  color: rgb(136, 136, 136);
+  font-weight: bold;
+}
+
+.value-text {
+  font-size: 24px;
+}
+
+
+/* SALE */
+.sale{
+    position: absolute;
+    background-color: #ec2f2f;
+    color: white;
+    padding: 5px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: -10px;
+    left: -30px;
+    letter-spacing: 2px;
+}
+
+
+/* PRODUCT DETAILS */
+
+.product-details-container {
+  flex: 1;
+  margin-top: 20px;
+}
+
+.product-details-container ul{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product-description {
+  color: rgb(136, 136, 136);
+  margin-bottom: 20px;
+}
+
+
+
+
